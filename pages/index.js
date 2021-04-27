@@ -4,8 +4,8 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import Image from 'next/image'
-import Row from 'react-bootstrap/row'
-import Col from 'react-bootstrap/col'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 export default function Home() {
     return (
