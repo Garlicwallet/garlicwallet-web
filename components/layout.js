@@ -22,7 +22,10 @@ const Layout = (props) => (
                 crossOrigin="anonymous"
             />
             <link rel="preconnect" href="https://fonts.gstatic.com"/>
-            <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+                    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+                          rel="stylesheet"/>
         </NextHead>
 
         {props.children}
@@ -31,17 +34,74 @@ const Layout = (props) => (
 
         <style jsx global>{`
     h1, h2, h3, h4, h5 {
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    }
+    h1{
+            font-size: 66px;
+        line-height: 1.212em;
+        font-weight: 700;
+        letter-spacing: -0.01em;
     }
     .jumbotron{
       background: none;
-      border-bottom: 3px solid #fecd2e;
     }
+    
+    .footer{
+      border-top: 1px solid #f4ce45;
+      padding-top: 16px;
+    }
+    .screen{
+    border-radius: 1rem !important;
+    }
+    
+    .screen-left {
+      transform:
+        perspective(800px)
+        rotateY(25deg) scale(0.9)
+        rotateX(10deg);
+      opacity: 0.8;
+      transition: 0.6s ease all;
+}
+
+  .screen-left:hover {
+    transform:
+      perspective(800px)
+      rotateY(-15deg)
+      translateY(-50px)
+      rotateX(10deg)
+      scale(1);
+    opacity: 1;
+  }
+  
+      .screen-right {
+      transform:
+        perspective(800px)
+        rotateY(-25deg) scale(0.9)
+        rotateX(10deg);
+      opacity: 0.8;
+      transition: 0.6s ease all;
+}
+
+  .screen-right:hover {
+    transform:
+      perspective(800px)
+      rotateY(15deg)
+      translateY(-50px)
+      rotateX(10deg)
+      scale(1);
+    opacity: 1;
+  }
+  
+  .disclaimer{
+  color: #8a8a8a;
+  }
+    
       body {
+background-image: linear-gradient(to right, #370f79, #131128);
+        color: white;
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-          Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-          'Segoe UI Symbol';
+        font-family: 'Poppins', sans-serif;
         min-height: 100vh;
         scroll-behavior: smooth;
         text-rendering: optimizeSpeed;

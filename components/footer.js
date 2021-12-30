@@ -6,10 +6,10 @@ import Col from 'react-bootstrap/Col'
 export default function Footer() {
     return (
         <>
-            <Container>
+            <Container className={"footer"}>
                 <Row>
                     <Col>
-                        <p>© 2021 Garlicwallet</p>
+                        <p>© 2021-2022 Garlicwallet</p>
                     </Col>
                     <Col>
                         <h5>Garlicwallet</h5>
@@ -28,6 +28,13 @@ export default function Footer() {
                             <li><Link href="https://garlicoinprice.com"><a>Garlicoin Price</a></Link></li>
                             <li><Link href="https://garlic.wiki"><a>Garlicoin Wiki</a></Link></li>
                         </ul>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <p className={"disclaimer"}><small>Disclaimer: Garlicwallet is provided on an "as is" basis without any warranties of any kind. In no event shall the owners of,
+                            or contributors to, Garlicwallet be liable for any damages of any kind, including, but not limited to, loss of use, loss of profits,
+                            loss of funds, or loss of data arising out of or in any way connected with the use of Garlicwallet.</small></p>
                     </Col>
                 </Row>
             </Container>
