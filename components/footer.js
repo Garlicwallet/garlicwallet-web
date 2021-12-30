@@ -15,6 +15,7 @@ export default function Footer() {
                         <h5>Garlicwallet</h5>
                         <ul className={"list-unstyled text-small"}>
                             <li><Link href="/"><a>Home</a></Link></li>
+                            <li><Link href="https://recovery.garlicwallet.com"><a>Recovery</a></Link></li>
                             <li><Link href="/privacy"><a>Privacy Policy</a></Link></li>
                             <li><Link href="https://github.com/Garlicwallet"><a>Github</a></Link></li>
                             <li><Link href="https://discord.gg/vAxFRb5DYe"><a>Discord</a></Link></li>
