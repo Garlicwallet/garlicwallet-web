@@ -24,6 +24,7 @@ export default function Footer() {
                     <Col>
                         <h5>Resources</h5>
                         <ul className={"list-unstyled text-small"}>
+                            <li><Link href="https://garlicblocks.com/"><a>Block Explorer</a></Link></li>
                             <li><Link href="https://garlicoinprice.com"><a>Garlicoin Price</a></Link></li>
                             <li><Link href="https://garlic.wiki"><a>Garlicoin Wiki</a></Link></li>
                         </ul>
