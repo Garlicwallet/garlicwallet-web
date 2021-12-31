@@ -8,7 +8,7 @@ export default function Footer() {
         <>
             <Container className={"footer"}>
                 <Row>
-                    <Col>
+                    <Col md={4} sm={12}>
                         <p>© 2021-2022 Garlicwallet</p>
                     </Col>
                     <Col>

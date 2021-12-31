@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import NextHead from 'next/head'
 import Footer from "./footer";
+import Navigation from "./navigation";
 
 // Your app's theme color
 const THEME_COLOR = '#005af0'
@@ -27,6 +28,7 @@ const Layout = (props) => (
                     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
                           rel="stylesheet"/>
         </NextHead>
+        <Navigation/>
 
         {props.children}
 
@@ -38,7 +40,9 @@ const Layout = (props) => (
         font-weight: 700;
     }
     h1{
-            font-size: 66px;
+    vertical-align: bottom;
+    display: inline;
+        font-size: 28px;
         line-height: 1.212em;
         font-weight: 700;
         letter-spacing: -0.01em;
@@ -56,42 +60,21 @@ const Layout = (props) => (
     }
     
     .screen-left {
+    margin-bottom: 40px;
       transform:
         perspective(800px)
         rotateY(25deg) scale(0.9)
         rotateX(10deg);
-      opacity: 0.8;
-      transition: 0.6s ease all;
 }
-
-  .screen-left:hover {
-    transform:
-      perspective(800px)
-      rotateY(-15deg)
-      translateY(-50px)
-      rotateX(10deg)
-      scale(1);
-    opacity: 1;
-  }
+    
   
       .screen-right {
+      margin-bottom: 40px;
       transform:
         perspective(800px)
         rotateY(-25deg) scale(0.9)
         rotateX(10deg);
-      opacity: 0.8;
-      transition: 0.6s ease all;
 }
-
-  .screen-right:hover {
-    transform:
-      perspective(800px)
-      rotateY(15deg)
-      translateY(-50px)
-      rotateX(10deg)
-      scale(1);
-    opacity: 1;
-  }
   
   .disclaimer{
   color: #8a8a8a;
